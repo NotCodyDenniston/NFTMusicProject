@@ -22,8 +22,6 @@ You do not need to implement `Trending` or `Best Selling`.
 * All data/mp3 can be included as part of the static build.
 
 TODO-
-Loop through data
-create a card for each piece of data(8)
-cards include an image, play button, display data(artist,song).
+
 
 create a menu that maps through and returns a selected genre(rap, rock, indie)

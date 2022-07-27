@@ -66,3 +66,12 @@ height: 80%;
 .price img{
   width: 20px;
 }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+  margin-top: 20px;
+  height: 30px;
+}

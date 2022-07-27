@@ -15,7 +15,7 @@ const musicData = [
         "song": "Hallowed be thy name",
         "datePublished": 1658811975,
         "price": 1.2,
-        "genre": "Rock"
+        "genre": "Rap"
     },
     {
         "icon": icon2,
@@ -31,7 +31,7 @@ const musicData = [
         "song": "Hallowed be thy name",
         "datePublished": 1658811975,
         "price": 1.2,
-        "genre": "Rock"
+        "genre": "indie"
     },
     {
         "icon": icon4,
@@ -55,7 +55,7 @@ const musicData = [
         "song": "Christmas music",
         "datePublished": 1658811975,
         "price": 1.2,
-        "genre": "Rock"
+        "genre": "Rap"
     },
     {
         "icon": icon7,
@@ -71,7 +71,7 @@ const musicData = [
         "song": "Christmas music",
         "datePublished": 1658811975,
         "price": 1.2,
-        "genre": "Rock"
+        "genre": "indie"
     }
 ]
 
