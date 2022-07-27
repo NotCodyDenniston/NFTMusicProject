@@ -44,7 +44,7 @@ const musicData = [
     {
         "icon": icon5,
         "artist": "Iron Maiden",
-        "song": "be thy name",
+        "song": "Christmas music",
         "datePublished": 1658811975,
         "price": 1.2,
         "genre": "Rock"
@@ -52,7 +52,7 @@ const musicData = [
     {
         "icon": icon6,
         "artist": "Iron Maiden",
-        "song": "be thy name",
+        "song": "Christmas music",
         "datePublished": 1658811975,
         "price": 1.2,
         "genre": "Rock"
@@ -60,7 +60,7 @@ const musicData = [
     {
         "icon": icon7,
         "artist": "Iron Maiden",
-        "song": "be thy name",
+        "song": "Christmas music",
         "datePublished": 1658811975,
         "price": 1.2,
         "genre": "Rock"
@@ -68,7 +68,7 @@ const musicData = [
     {
         "icon": icon8,
         "artist": "Iron Maiden",
-        "song": "be thy name",
+        "song": "Christmas music",
         "datePublished": 1658811975,
         "price": 1.2,
         "genre": "Rock"

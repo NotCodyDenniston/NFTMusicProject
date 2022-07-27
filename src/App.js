@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-//import Audio from './components/audio'
+
 import Card from './components/card';
 import musicData from './components/data';
 
@@ -14,7 +14,7 @@ function App() {
         <div className='card-container'>
 
     {musicData.map(card =>(
-      <Card icon={card.icon}/>
+      <Card icon={card.icon} artist={card.artist} song={card.song} price={card.price}/>
     ))}
         </div>
           

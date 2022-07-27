@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 3%;
   margin-bottom: 3%;
   margin-left: 7%;
@@ -26,10 +27,42 @@
 }
 
 .card {
-  width: 23%;
-  margin: 1%
+  height: 50%;
+  width: 21%;
+  margin: 1%;
+ border: 2px solid black;
+ border-radius: 20px;
 }
 
 img{
-width: auto;
+width: 100%;
+height: 80%;
+}
+
+.cardInfo{
+  width: 95%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cardInfo-column {
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 15px;
+}
+
+.songs{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  width: auto;
+}
+.price img{
+  width: 20px;
 }
