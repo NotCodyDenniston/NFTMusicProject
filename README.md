@@ -23,5 +23,6 @@ You do not need to implement `Trending` or `Best Selling`.
 
 TODO-
 
+//header and footer
 
-create a menu that maps through and returns a selected genre(rap, rock, indie)
+//fix the css when filtered
