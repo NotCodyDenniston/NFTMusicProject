@@ -11,6 +11,7 @@ export default function audio(props) {
     audio.pause();
     audio.currentTime = 0;
   };
+  
 
   const playButton =  <button onClick={start}>Play</button>
   const stopButton =  <button onClick={stop}>Stop</button>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 import Card from './components/card';
@@ -9,26 +9,58 @@ import Footer from './components/footer';
 
 function App() {
 
+  
   const initialData = {
     musicArray: musicData
   }
+  
+  const [music, setMusic] = useState(initialData)
+  const [sortingMethod, setSortingMethod] = useState('')
+  
+  useEffect(() => {
+    console.log('USEEFFECT')
+  sortCases();
+  }, [sortingMethod])
 
-const [music, setMusic] = useState(initialData)
+  const sortCases = () => {
+    console.log('SORTCASES','SORTING METHOd', sortingMethod)
+    switch(sortingMethod) {
+        case 'priceLowToHigh':
+          music.musicArray.sort(function(a, b){return a.price-b.price});
+            break;
+        case 'priceHighToLow':
+            music.musicArray.sort(function(a, b){return b.price-a.price});
+            break;
+        case 'dateLowToHigh':
+          music.musicArray.sort(function(a, b){return a.datePublished-b.datePublished});
+            break;
+        case 'dateHighToLow':
+          music.musicArray.sort(function(a, b){return b.datePublished-a.datePublished});
+            break;
+    }
+    setMusic({...music})
+  }
 
   const onClickHandler = (evt) => {
-     console.log(evt.target.textContent)
-     let filteredData = musicData.filter((song) => song.genre == evt.target.textContent)
      setMusic({
-     musicArray: filteredData
+     musicArray: musicData.filter((song) => song.genre == evt.target.textContent)
       })
 }
 
+ 
+
+
   return (
+    
     <div className="App">
+      {console.log('rendering')}
       <header className="App-header">
         <Nav/>
         <h2>EXPLORE</h2>
-        <Menu onClickHandler={onClickHandler}/>
+        <Menu 
+        onClickHandler={onClickHandler} 
+        sortingMethod={sortingMethod} 
+        setSortingMethod={setSortingMethod}/>
 
           <div className='card-container'>
             {music.musicArray.map(card =>(
