@@ -17,6 +17,7 @@ function App() {
   const [music, setMusic] = useState(initialData)
   const [sortingMethod, setSortingMethod] = useState('')
   
+  //Sorts the prices or dates when an option from the form is selected
   useEffect(() => {
     console.log('USEEFFECT')
   sortCases();
@@ -38,9 +39,11 @@ function App() {
           music.musicArray.sort(function(a, b){return b.datePublished-a.datePublished});
             break;
     }
+    //Setting State just to rerender component
     setMusic({...music})
   }
 
+  //OnClick for genre menu
   const onClickHandler = (evt) => {
      setMusic({
      musicArray: musicData.filter((song) => song.genre == evt.target.textContent)
